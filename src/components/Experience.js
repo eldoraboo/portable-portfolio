@@ -21,19 +21,25 @@ import {
 } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import { Fade } from "react-reveal";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ExperienceArray from "./ExperienceArray";
 import TagsArray from "./TagsArray";
 
 export default function Experience({ color }) {
   const experience = ExperienceArray();
   const options = TagsArray("ExperienceTags");
+  const [selected, setSelected] = useState("");
 
-  const [selected, setSelected] = useState(options[0].value);
-
+  useEffect(() => {
+    if (options.length > 0) {
+      setSelected(options[0].value);
+    }
+  }, [options]);
+  
   const handleSelected = (value) => {
     setSelected(value);
   };
+
   return (
     <>
       <Container maxW={"3xl"} id="experience">
