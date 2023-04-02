@@ -34,9 +34,6 @@ To edit the content on your website, refer to the markdown files located in the 
 ### Profile.md
 
 ```
-## Site Name
-- Your Name or Site Title Here
-
 ## Header
 - Hi, my name is ______. 
 - I'm a ______.

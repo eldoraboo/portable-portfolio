@@ -23,9 +23,6 @@ const parseProfile = (mdContent) => {
       const section = line.substr(3).trim();
 
       switch (section) {
-        case "Site Name":
-          profile.siteName = lines[++i].substr(2).trim();
-          break;
         case "Header":
           profile.headerName = lines[++i].substr(2).trim();
           profile.headerRole = lines[++i].substr(2).trim();
