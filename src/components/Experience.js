@@ -58,7 +58,8 @@ export default function Experience({ color }) {
             </HStack>
             <Divider orientation="horizontal" />
           </Stack>
-          <Center px={4}>
+          {/* Code for Button Filters*/}
+          {/* <Center px={4}>
             <ButtonGroup variant="outline">
               {options.map((option) => (
                 <Button
@@ -69,10 +70,11 @@ export default function Experience({ color }) {
                 </Button>
               ))}
             </ButtonGroup>
-          </Center>
+          </Center> */}
           <Stack px={4} spacing={4}>
             {experience
-              .filter((exp) => exp.tags.includes(selected))
+              // This is to filter results
+              // .filter((exp) => exp.tags.includes(selected))
               .map((exp) => (
                 <Fade bottom>
                   <Card key={exp.company} size="sm">
