@@ -49,6 +49,10 @@ export default function Nav({ color }) {
     const experienceSection = document.querySelector("#experience");
     experienceSection.scrollIntoView({ behavior: "smooth" });
   };
+  const scrollToEducation = () => {
+    const educationSection = document.querySelector("#education");
+    educationSection.scrollIntoView({ behavior: "smooth" });
+  };
   const scrollToProjects = () => {
     const projectsSection = document.querySelector("#projects");
     projectsSection.scrollIntoView({ behavior: "smooth" });
@@ -103,6 +107,9 @@ export default function Nav({ color }) {
                 </Button>
                 <Button variant="ghost" onClick={scrollToExperience}>
                   Experience
+                </Button>
+                <Button variant="ghost" onClick={scrollToEducation}>
+                  Education
                 </Button>
                 <Button variant="ghost" onClick={scrollToProjects}>
                   Projects

@@ -1,4 +1,4 @@
-import React from 'react';
+import {React, useEffect} from 'react';
 import './App.css';
 import Nav from './components/NavBar';
 import Header from './components/Hero';
@@ -11,9 +11,24 @@ import Footer from './components/Footer';
 function App() {
   // Available Colours:
   // blue, cyan, gray, green, orange, pink, purple, red, teal, yellow
-
   // edit this variable to change the color theme
-  const color = "teal";
+  let color = "blue";
+  // let checkColorMode = localStorage.getItem("chakra-ui-color-mode");
+  // console.log(checkColorMode);
+
+  // if (checkColorMode === "light"){
+  //   color = "blue";
+  // }
+  // else{
+  //   color = "yellow";
+  // }
+  // useEffect(() => {
+  // }, [color]);
+  
+  
+
+
+
 
   return (
     <>
