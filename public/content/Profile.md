@@ -4,7 +4,7 @@
 ## Header
 - Привет, Меня зовут Азамат. 
 - Я разработчик веб-приложений.
-- Делаю современные приложения под ваш бизнес
+- Делаю современные приложения под ваш бизнес!
 
 ## About
 Write your "About" section here.
@@ -12,8 +12,8 @@ Write your "About" section here.
 ## Contact
 Write your "Contact" section here.
 - LinkedIn: https://linkedin.com/in/amoldashev/
-- GitHub: https://github.com/username
-- Email: username@gmail.com
+- GitHub: https://github.com/amoldashev
+- Email: amoldashev@gmail.com
 
 ## Logo
-- EB
+- AM
