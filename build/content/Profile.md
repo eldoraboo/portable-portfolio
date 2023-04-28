@@ -2,18 +2,18 @@
 - Portable Portfolio
 
 ## Header
-- Hi, my name is Eldora. 
-- I'm a software engineer.
-- Short Description Here.
+- Hi, my name is Steve! 
+- I'm a software developer
+- Looking for software development opportunities in September 2023!
 
 ## About
-Write your "About" section here.
+Hi there! My name is Steve Do, and I am a software developer with a passion for web development. I am a recent new graduate but have worked on a variety of projects that range from small websites to large-scale web applications. When I'm not coding, you can find me exploring new technologies, building custom keyboards, or playing League of Legends. 
 
 ## Contact
 Write your "Contact" section here.
-- LinkedIn: https://linkedin.com/in/username
-- GitHub: https://github.com/username
-- Email: username@gmail.com
+- LinkedIn: https://linkedin.com/in/stevedo1
+- GitHub: https://github.com/SteveDo1
+- Email: steve.do@hotmail.com
 
 ## Logo
-- EB
+- SD

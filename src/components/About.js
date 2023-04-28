@@ -22,9 +22,9 @@ export default function About({ color }) {
             <Stack align="center" direction="row" px={4}>
               <HStack mx={4}>
                 <Text color={`${color}.400`} fontWeight={800}>
-                  01
+                  01.
                 </Text>
-                <Text fontWeight={800}>About</Text>
+                <Text fontWeight={800} w={20}>About Me</Text>
               </HStack>
               <Divider orientation="horizontal" />
             </Stack>

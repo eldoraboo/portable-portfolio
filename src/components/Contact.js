@@ -34,7 +34,7 @@ export default function Contact({ color }) {
           <Stack align="center" direction="row" p={4}>
             <HStack mx={4}>
               <Text color={`${color}.400`} fontWeight={800}>
-                04
+                05.
               </Text>
               <Text fontWeight={800}>Contact</Text>
             </HStack>
