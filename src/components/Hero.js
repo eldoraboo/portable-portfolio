@@ -1,8 +1,11 @@
+import React from 'react';
+import TextTransition, { presets } from 'react-text-transition';
 import {
   Box,
   Heading,
   Container,
   Text,
+  Center,
   Button,
   Stack,
   Icon,
@@ -18,12 +21,17 @@ export default function Header({ color }) {
     contactSection.scrollIntoView({ behavior: "smooth" });
   };
   const linkedin = () => {
-    window.open(
-                `${profile.linkedin}`,
-                "_blank",
-                "noreferrer,noopener"
-              );
+    window.open(`${profile.linkedin}`, "_blank", "noreferrer,noopener");
   };
+
+  const TEXTS = ["i'm an Astronaut🚀👨🏻‍🚀", "i'm a Full Stack Web Dev👨🏻‍💻", "i'm SpiderMan🕸️🕷️", "i'm a Sophomore👨🏻‍🎓", "i'am an IOT Hobbyist👨🏻‍🏭", "i'am an Actor😎😂lol"];
+  const [index, setIndex] = React.useState(0);
+
+  React.useEffect(() => {
+    const intervalId = setInterval(() => setIndex((index) => index + 1), 3000);
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <>
       <Heading>
@@ -42,20 +50,33 @@ export default function Header({ color }) {
           pt={{ base: 36, md: 52 }}
         >
           <Heading
-            fontWeight={600}
+            fontWeight={770}
             fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
             lineHeight={"110%"}
           >
-            {profile.headerName} <br />
-            <Text as={"span"} color={`${color}.400`}>
-              {profile.headerRole}
-            </Text>
+            <Box>
+              <Text display="inline">
+                Ashutosh
+              </Text>
+              <Text color="orange" display="inline">
+                7i
+              </Text>
+            </Box>
+
+            <Center>
+            <Box spacing={7} fontWeight={600} color={`${color}.400`}>
+              <TextTransition direction="down" springConfig={presets.stiff}>
+                {TEXTS[index % TEXTS.length]}
+              </TextTransition>
+            </Box>
+            </Center>
           </Heading>
+
           <Text
             color={"gray.500"}
             fontSize={{ base: "lg", sm: "xl", md: "2xl" }}
           >
-            {profile.headerDesc}
+            {"Afterall i'm an Engineers🗿😂"}
           </Text>
           <Stack
             direction={"column"}
@@ -66,7 +87,6 @@ export default function Header({ color }) {
           >
             <Button
               colorScheme={color}
-              bg={`${color}.400`}
               rounded={"full"}
               px={6}
               _hover={{
@@ -74,11 +94,13 @@ export default function Header({ color }) {
               }}
               onClick={linkedin}
             >
-              Let's connect!
+              Let's connect🚀!
             </Button>
+
             <Button
-              variant={"link"}
-              colorScheme={"blue"}
+              rounded={"full"}
+              variant='outline'
+              colorScheme={"yellow"}
               size={"sm"}
               onClick={scrollToContact}
             >

@@ -1,19 +1,19 @@
 ## Site Name
-- Portable Portfolio
+- Ashutosh Portfolio
 
 ## Header
-- Hi, my name is Eldora. 
-- I'm a software engineer.
-- Short Description Here.
+- Hi👋🏻, i am Aashutosh Soni
+- I'm an Astronaut👨🏻‍🚀🚀
+- Kidding😂
 
 ## About
-Write your "About" section here.
+Hello, I'm Aashutosh Soni 👋, a passionate Full-Stack Developer from India 🇮🇳. I specialize in LAMP & MERN stack. I'm also an ML&IOT enthusiast 🤖, a winner of WittyHacks 3.0 🏆(my first Hackathon), and an Alpha MLSA. I enjoy tinkering with electronic devices 🔌, creating videos 🎥, and graphics 🎨. Let's connect and talk about all things tech! 🚀
 
 ## Contact
-Write your "Contact" section here.
-- LinkedIn: https://linkedin.com/in/username
-- GitHub: https://github.com/username
-- Email: username@gmail.com
+we will go to mars together👨🏻‍🚀🚀😂
+- LinkedIn: https://linkedin.com/in/Ashutosh7i
+- GitHub: https://github.com/Ashutosh7i
+- Email: Aashutossh7i@gmail.com
 
 ## Logo
-- EB
+- AS
