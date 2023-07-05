@@ -10,6 +10,8 @@ import {
   useColorMode,
   IconButton,
   useMediaQuery,
+  Box,
+  Text,
   useDisclosure,
   HStack,
   Link,
@@ -17,21 +19,12 @@ import {
 import { MoonIcon, SunIcon, HamburgerIcon } from "@chakra-ui/icons";
 import { useState } from "react";
 import ProfileArray from "./ProfileArray";
+
 const TbIcons = require("react-icons/tb");
 
 export default function Nav({ color }) {
   const profile = ProfileArray();
-  const colors = {
-  "blue": "#3182CE", 
-  "cyan": "#00B5D8", 
-  "gray": "#718096", 
-  "green": "#38A169", 
-  "orange": "#DD6B20", 
-  "pink": "#D53F8C", 
-  "purple": "#805AD5", 
-  "red": "#E53E3E", 
-  "teal": "#319795", 
-  "yellow": "#D69E2E"};
+
   const [scroll, setScroll] = useState(false);
   const { colorMode, toggleColorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -57,6 +50,11 @@ export default function Nav({ color }) {
     const contactSection = document.querySelector("#contact");
     contactSection.scrollIntoView({ behavior: "smooth" });
   };
+
+  const redirectToBlogs = () => {
+    window.open("https://ashutosh7i.hashnode.dev");
+  };
+
   const changeScroll = () =>
     document.body.scrollTop > 80 || document.documentElement.scrollTop > 80
       ? setScroll(true)
@@ -88,9 +86,16 @@ export default function Nav({ color }) {
       >
         <Link onClick={scrollToHero}>
           <HStack>
-            {TbLetterComponents.map((Component, index) => (
-              <Component key={index} color={colors[color]} />
-            ))}
+
+          <Box fontWeight={700}>
+              <Text display="inline">
+                Ashutosh
+              </Text>
+              <Text color="orange" display="inline">
+                7i
+              </Text>
+            </Box>
+
           </HStack>
         </Link>
 
@@ -106,6 +111,9 @@ export default function Nav({ color }) {
                 </Button>
                 <Button variant="ghost" onClick={scrollToProjects}>
                   Projects
+                </Button>
+                <Button variant="ghost" onClick={redirectToBlogs}>
+                  Blogs
                 </Button>
                 <Button variant="ghost" onClick={scrollToContact}>
                   Contact
@@ -139,6 +147,9 @@ export default function Nav({ color }) {
                       </Button>
                       <Button variant="ghost" onClick={scrollToProjects}>
                         Projects
+                      </Button>
+                      <Button variant="ghost" onClick={redirectToBlogs}>
+                      Blogs
                       </Button>
                       <Button variant="ghost" onClick={scrollToContact}>
                         Contact
