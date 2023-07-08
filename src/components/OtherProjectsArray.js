@@ -14,7 +14,7 @@ const parseOtherProjects = (mdContent) => {
       const badges = [];
       const buttons = [];
 
-      while (lines[++i] && !lines[i].startsWith("- Badges:")) {}
+      while (lines[++i] && !lines[i].startsWith("- Badges:")) { }
       while (lines[++i] && lines[i].startsWith("  - ")) {
         const badgeLine = lines[i].substr(4).split("[");
         const badgeName = badgeLine[0].trim();
