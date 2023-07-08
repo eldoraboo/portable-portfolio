@@ -13,7 +13,7 @@ root.render(
   <ChakraProvider theme={theme}>
     <React.StrictMode>
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
-      <App/>
+      <App />
     </React.StrictMode>
   </ChakraProvider>
 );
